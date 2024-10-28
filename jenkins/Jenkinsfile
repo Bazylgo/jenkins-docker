@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building the application test...'
+                echo 'Building the application test a...'
                 // Add build steps here, such as `mvn clean install` for Java projects
             }
         }
