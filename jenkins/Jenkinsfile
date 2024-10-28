@@ -2,9 +2,15 @@
 pipeline {
     agent any
     stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/Bazylgo/jenkins-docker.git'
+            }
+        }
         stage('Build') {
             steps {
-                echo 'Building... something'
+                echo 'Building the application...'
+                // Add build steps here, such as `mvn clean install` for Java projects
             }
         }
         stage('Deploy') {
