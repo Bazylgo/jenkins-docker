@@ -1,0 +1,19 @@
+// Jenkinsfile
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+                    def jenkinsUrl = 'http://localhost:8080' // Jenkins server URL
+                    // Call or trigger Jenkins-specific steps if needed
+                }
+            }
+        }
+    }
+}
